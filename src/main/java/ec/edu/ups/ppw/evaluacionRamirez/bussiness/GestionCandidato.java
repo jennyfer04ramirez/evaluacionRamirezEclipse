@@ -19,6 +19,8 @@ public class GestionCandidato {
 	}
 
 	public boolean AddCandidato(Candidato candidato) {
+		candidatoDAO.addBinomio(candidato.getBinomio());
+		candidatoDAO.addCandidato(candidato);
 		return true;
 	}
 

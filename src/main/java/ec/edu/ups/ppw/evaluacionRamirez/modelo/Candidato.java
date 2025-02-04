@@ -18,7 +18,7 @@ public class Candidato {
 	private String nombre;
 	private String apellido;
 	
-	@OneToOne(fetch = FetchType.LAZY)
+	@OneToOne(fetch = FetchType.EAGER)
 	private Binomio binomio;
 
 	public int getId() {
